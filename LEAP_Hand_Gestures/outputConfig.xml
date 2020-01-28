@@ -17,7 +17,7 @@
         <string>/Sprinkle_food</string>
         <string>/Cleaning_wave</string>
         <string>/Finger_point</string>
-        <string>/Easter_egg</string>
+        <string>/WTF</string>
       </gestureOscMessages>
       <outputOscMessage>output</outputOscMessage>
     </wekimini.osc.OSCDtwOutput>
