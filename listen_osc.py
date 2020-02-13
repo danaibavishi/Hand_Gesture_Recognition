@@ -22,15 +22,16 @@ if __name__ == "__main__":
   parser.add_argument("--ip",
       default="127.0.0.1", help="The ip to listen on")
   parser.add_argument("--port",
-      type=float, default=12000, help="The port to listen on")
+      type=float, default=6448, help="The port to listen on")
   args = parser.parse_args()
 
   dispatcher = dispatcher.Dispatcher()
+  dispatcher.map("/Unity_Input", print)
   dispatcher.map("/Sprinkle_food", print)
   dispatcher.map("/Cleaning_wave", print)
   dispatcher.map("/Finger_point", print)
-  dispatcher.map("/Easter_Egg", print)
-  #dispatcher.map("/wek/outputs", print)
+  dispatcher.map("/Italian", print)
+  dispatcher.map("/wek/inputs", print)
   dispatcher.map("/volume", print_volume_handler, "Volume")
   dispatcher.map("/logvolume", print_compute_handler, "Log volume", math.log)
 
